@@ -95,3 +95,13 @@ query TestNewQuery {
     }
 }
 ```
+
+
+# @provides
+
+This same issue exists even if we explicitly define @provides on the `oldQuery`.
+
+To test this run `old-book-subgraph-provides` and update `gateway/index.js` according to the TODO.
+
+Run the same `TestOldQuery` as above and see the same query plan that includes `new-book-subgraph` even though
+the `old-book-subgraph-provides` explicitly @provides `authorId` on the query path.

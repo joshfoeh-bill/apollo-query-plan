@@ -9,6 +9,7 @@ const gateway = new ApolloGateway({
             { name: "old-book-subgraph", url: "http://localhost:4001/graphql" },
             { name: "new-book-subgraph", url: "http://localhost:4002/graphql" },
             { name: "author-subgraph", url: "http://localhost:4003/graphql" },
+            // { name: "old-book-subgraph-provides", url: "http://localhost:4004/graphql" }, // TODO uncomment this and comment out line 9 to test @provides
         ],
     }),
     experimental_didResolveQueryPlan: function(options) {
