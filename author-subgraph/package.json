@@ -1,0 +1,18 @@
+{
+  "name": "old-book-subgraph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/subgraph": "2.5.5",
+    "@apollo/server": "^4.9.3",
+    "graphql": "^16.8.1",
+    "graphql-tag": "^2.12.6"
+  }
+}
